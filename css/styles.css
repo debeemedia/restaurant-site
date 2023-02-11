@@ -74,7 +74,11 @@ body {
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
 	border: 1px solid #61122f; /* color maroon */
-} /* COLOR STILL NOT PERFECT */
+} /* COLOR STILL NOT PERFECT, therefore, I used inspect element in chrome to get and modify class code below: (second icon bar was the problematic one)*/
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #61122f;
+	height: 1px;
+} /*End*/ 
 .navbar-header button.navbar-toggle {
 	clear: both;
 	margin-top: -30px;
@@ -124,7 +128,7 @@ body {
 
 /* END HOME PAGE */
 
-/* Large devices only */
+/****** Large devices only ******/
 @media (min-width: 1200px) {
 	.container .jumbotron {
 		background: url('../images/jumbotron_1200.jpg') no-repeat; /* Actual width of image is lower breakpoint of media query */
@@ -132,7 +136,7 @@ body {
 	}
 }
 
-/* Medium devices only */
+/****** Medium devices only ******/
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* Header */
 	#logo-img {
@@ -140,9 +144,6 @@ body {
 	width: 100px;
 	height: 100px;
 	margin: 5px 5px 5px 0;
-	}
-	#phone a { /* Phone number */
-		font-size: 0.8em; /*Did this because the phone number here is longer than David Chu's own */
 	}
 	/* End Header */
 
@@ -152,9 +153,10 @@ body {
 		height: 558px; /* Actual height of image file */
 	}
 	/* End Home Page */
+
 }
 
-/* Small devices only */
+/****** Small devices only ******/
 @media (min-width: 768px) and (max-width: 991px) {
 	/* Home Page */
 	.container .jumbotron {
@@ -162,9 +164,10 @@ body {
 		height: 432px; /* Actual height of image file */
 	}
 	/* End Home Page */
+
 }
 
-/* Extra small devices only */
+/****** Extra small devices only ******/
 @media (max-width: 767px) {
 	/* Header */
 	.navbar-brand {
@@ -212,6 +215,28 @@ body {
 	.container .jumbotron {
 		margin-top: 30px;
 		padding: 0;
+	}
+
+	#menu-tile, #specials-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+	}
+
+}
+
+/****** Super extra small devices only (e.g., iPhone 4) ******/
+@media (max-width: 479px) {
+	/* Header */
+	.navbar-brand h1 { /* Restaurant name */
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	/* End Header */
+
+	/* Home page */
+	#menu-tile, #specials-tile {
+		width: 280px;
+		margin: 0 auto 15px;
 	}
 }
 
