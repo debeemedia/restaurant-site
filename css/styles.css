@@ -85,6 +85,35 @@ body {
 }
 /* END HEADER */
 
+/* FOOTER */
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222; /* color black lighter-shade */
+	border-top: 0;
+}
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+#hours, #address {
+	line-height: 2;
+}
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+#address p {
+	color: #557c3e;
+	line-height: 1.8;
+}
+#testimonials {
+	font-style: italic;
+}
+#testimonials p:nth-child(2) {
+	margin-top: 25px;
+}
+/* END FOOTER */
+
 /* HOME Page */
 .container .jumbotron {
 	box-shadow: 0 0 50px #3f0c1f; /* Color dark-maroon */
@@ -210,6 +239,19 @@ body {
 		text-transform: uppercase;
 	}
 	/* End Header */
+
+	/* Footer */
+	.panel-footer section {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0; /* margin already exists on the whole row */
+	}
+	.panel-footer section hr {
+		width: 50%;
+	}
+	/* End Footer */
 
 	/* Home Page */
 	.container .jumbotron {
